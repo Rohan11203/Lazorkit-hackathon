@@ -23,15 +23,15 @@ export function WalletBalance() {
   }, [smartWalletPubkey]);
 
   return (
-    <div className="p-8 border-l-4 border-black bg-white">
-      <h2 className="text-gray-400 text-xs font-bold uppercase tracking-widest mb-2">
+    <div className="p-8 border-l-4 border-orange-500 pl-6">
+      <h2 className="text-zinc-500 text-xs font-bold uppercase tracking-widest mb-2">
         Total Balance
       </h2>
       <div className="flex items-baseline gap-2">
-        <span className="text-6xl font-black tracking-tighter text-black">
+        <span className="text-6xl font-black tracking-tighter text-white">
           {balance !== null ? balance.toFixed(4) : "..."}
         </span>
-        <span className="text-xl font-medium text-gray-400">SOL</span>
+        <span className="text-xl font-medium text-zinc-500">SOL</span>
       </div>
     </div>
   );

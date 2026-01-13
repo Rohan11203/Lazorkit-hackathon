@@ -62,19 +62,19 @@ export function SendSOL() {
   };
 
   return (
-    <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-xl shadow-gray-200/50">
+    <div className="bg-zinc-900/50 backdrop-blur-sm p-8 rounded-3xl border border-zinc-800 fire-shadow">
       <div className="mb-8">
-        <h3 className="text-2xl font-bold text-black tracking-tight">
+        <h3 className="text-2xl font-bold text-white tracking-tight">
           Send SOL
         </h3>
-        <p className="text-sm text-gray-500 mt-1">
+        <p className="text-sm text-zinc-500 mt-1">
           Gas fees are sponsored (free).
         </p>
       </div>
 
       <form onSubmit={handleSend} className="space-y-6">
         <div className="space-y-2">
-          <label className="text-xs font-bold uppercase tracking-wider text-gray-500">
+          <label className="text-xs font-bold uppercase tracking-wider text-zinc-500">
             Recipient
           </label>
           <input
@@ -82,13 +82,13 @@ export function SendSOL() {
             value={recipient}
             onChange={(e) => setRecipient(e.target.value)}
             placeholder="Solana Address"
-            className="w-full bg-gray-50 border border-gray-200 rounded-xl p-4 text-black focus:outline-none focus:ring-2 focus:ring-black/5 focus:border-black transition-all font-mono text-sm"
+            className="w-full bg-black border border-zinc-800 rounded-xl p-4 text-white focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-white transition-all font-mono text-sm placeholder:text-zinc-700"
             required
           />
         </div>
 
         <div className="space-y-2">
-          <label className="text-xs font-bold uppercase tracking-wider text-gray-500">
+          <label className="text-xs font-bold uppercase tracking-wider text-zinc-500">
             Amount (SOL)
           </label>
           <input
@@ -97,7 +97,7 @@ export function SendSOL() {
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
             placeholder="0.0"
-            className="w-full bg-gray-50 border border-gray-200 rounded-xl p-4 text-black focus:outline-none focus:ring-2 focus:ring-black/5 focus:border-black transition-all font-mono text-lg"
+            className="w-full bg-black border border-zinc-800 rounded-xl p-4 text-white focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-white transition-all font-mono text-lg placeholder:text-zinc-700"
             required
           />
         </div>
@@ -105,7 +105,7 @@ export function SendSOL() {
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-black cursor-pointer text-white hover:opacity-90 font-bold py-4 rounded-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+          className="w-full bg-white cursor-pointer text-black hover:bg-zinc-200 font-bold py-4 rounded-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
         >
           {loading ? (
             <Loader2 className="animate-spin w-5 h-5" />
@@ -119,10 +119,10 @@ export function SendSOL() {
         <div
           className={`mt-6 p-4 rounded-xl text-sm font-medium ${
             status.includes("Success")
-              ? "bg-green-50 text-green-700 border border-green-100"
+              ? "bg-green-500/10 text-green-400 border border-green-500/20"
               : status.includes("Failed")
-              ? "bg-red-50 text-red-700 border border-red-100"
-              : "bg-blue-50 text-blue-700 border border-blue-100"
+              ? "bg-red-500/10 text-red-400 border border-red-500/20"
+              : "bg-blue-500/10 text-blue-400 border border-blue-500/20"
           }`}
         >
           {status}
@@ -132,7 +132,7 @@ export function SendSOL() {
                 href={`https://explorer.solana.com/tx/${txSignature}?cluster=devnet`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-green-900"
+                className="underline hover:text-green-300"
               >
                 View on Explorer
               </a>
