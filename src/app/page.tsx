@@ -24,7 +24,7 @@ export default function Home() {
       <nav className="sticky top-0 w-full z-50 bg-black/50 backdrop-blur-md border-b border-white/5">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="font-bold text-lg tracking-tighter flex items-center gap-2">
-            Lazor Nexus
+            Lumina
           </div>
           <div className="flex gap-6 text-sm font-medium text-zinc-400">
             <Link
