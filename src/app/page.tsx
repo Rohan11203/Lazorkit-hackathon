@@ -46,7 +46,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <main className="flex-grow flex flex-col items-center justify-center px-6 pt-20 pb-32 max-w-6xl mx-auto w-full text-center relative overflow-hidden">
+      <main className="flex-grow flex flex-col items-center justify-center px-6 pt-12 md:pt-20 pb-16 md:pb-32 max-w-6xl mx-auto w-full text-center relative overflow-hidden">
         <div className="space-y-8 max-w-4xl mx-auto z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-zinc-900/80 border border-zinc-800 text-[10px] font-bold tracking-[0.2em] uppercase text-zinc-400 mb-6 fire-shadow transition-transform hover:scale-105 duration-300 backdrop-blur-sm">
             <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse shadow-[0_0_10px_rgba(249,115,22,0.5)]" />
@@ -66,7 +66,7 @@ export default function Home() {
           </p>
 
           <div className="pt-10 flex flex-col items-center gap-6">
-            <div className="flex items-center gap-4">
+            <div className="flex flex-col md:flex-row items-center gap-4">
               <div className="transform hover:scale-105 transition-transform duration-300">
                 <div className="p-1 rounded-2xl bg-gradient-to-b from-orange-200 to-orange-600 fire-shadow">
                   <div className="bg-black rounded-xl">
@@ -92,7 +92,7 @@ export default function Home() {
         </div>
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-3 gap-6 mt-32 w-full text-left z-10">
+        <div className="grid md:grid-cols-3 gap-6 mt-16 md:mt-32 w-full text-left z-10">
           <FeatureCard
             icon={<Fingerprint className="w-6 h-6 text-orange-500" />}
             title="Biometric Auth"
@@ -111,7 +111,7 @@ export default function Home() {
         </div>
 
         {/* Product Showcase */}
-        <div className="mt-40 w-full max-w-4xl mx-auto relative z-10">
+        <div className="mt-20 md:mt-40 w-full max-w-4xl mx-auto relative z-10">
           <div className="text-sm font-bold tracking-widest text-zinc-500 uppercase mb-8">
             Quick Integration
           </div>
@@ -132,7 +132,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-zinc-900 py-12 text-center text-sm text-zinc-600 z-10">
-        <p>© 2026 Lazor Lumina. Built with Next.js & Solana.</p>
+        <p>© 2026 Lumina. Built with Next.js & Solana.</p>
       </footer>
     </div>
   );
