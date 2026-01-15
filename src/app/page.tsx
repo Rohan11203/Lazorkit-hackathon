@@ -28,7 +28,7 @@ export default function Home() {
           </div>
           <div className="flex gap-6 text-sm font-medium text-zinc-400">
             <Link
-              href="/docs"
+              href="https://github.com/Rohan11203/Lumina/blob/main/docs/tutorial-1-passkey-wallet.md"
               className="hover:text-white transition-colors flex items-center gap-2"
             >
               <Book className="w-4 h-4" /> Docs
