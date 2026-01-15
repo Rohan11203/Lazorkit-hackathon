@@ -3,6 +3,8 @@
 > **Hackathon Submission**: A demonstration of Passkey-native authentication and gasless transactions on Solana using the LazorKit SDK.
 
 ## 🚀 Overview
+![lazorkit_img](https://github.com/user-attachments/assets/54a108db-d1d8-4834-ba03-fa387b196662)
+
 
 This project showcases the next generation of Solana user experience. By integrating **LazorKit**, we eliminate two of the biggest hurdles for new users:
 
